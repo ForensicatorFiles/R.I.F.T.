@@ -12,9 +12,9 @@ R.I.F.T. is a lightweight, fast, and extensible YARA-powered forensic analyzer -
 - Install requirements
 - Run the program.
 
-```
+``` Bash
 python3 -m venv venv
-source bin\Scripts\activate
+source venv/bin/activate
 pip install -r requirements.txt
 
 python3 rift.py EXTRACTION.ZIP mobile.yara
@@ -26,7 +26,7 @@ In addition, you can install pyinstaller ans create an executable.
 
 ```
 pip insall pyinstaller
-pyinstaller --onefile rift.py
+pyinstaller rift.py --onefile
 
 rift.exe EXTRACTION.ZIP mobile.yara
 ```
